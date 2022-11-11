@@ -1,0 +1,18 @@
+{% extends 'tem.html' %}
+
+{% block title %}
+Додавання рецепту
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Додавання рецепту</h1>
+        <form methot="POST">
+            <input type="text" name="name_dish" id="name_dish" class="form-control" placeholder="Назва"><br>
+            <input type="text" name="type_dish" id="type_dish" class="form-control" placeholder="Тип їжі"><br>
+            <textarea name="the_ingredients" id="the_ingredients" class="form-control" placeholder="Інгредієнти"></textarea><br>
+            <textarea name="steps_dish" id="steps_dish" class="form-control" placeholder="Кроки приготування"></textarea><br>
+            <input type="submit"class="btn btn-success" value="Зберегти"><br>
+        </form>
+    </div>
+{% endblock %}
