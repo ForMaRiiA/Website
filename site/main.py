@@ -81,5 +81,11 @@ def appetizer():
     return render_template("underdevelopment.html")
 
 
+@site.route('/sign_in')
+def sign_in():
+    return render_template("sign.html")
+
+
+
 if __name__ == "__main__":
     site.run(debug=True)
