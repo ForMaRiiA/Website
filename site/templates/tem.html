@@ -10,25 +10,28 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <header class="container sticky-top d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <span class="fs-4">     MaMa    </span>
-          </a>
+<header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">MaMa</span>
+        </a>
+        <form class="col-10 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+    </div>
 
-          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a class="container btn btn-warning text-decoration-none" href="/addrecipes">Додати рецепт</a>
-            <a class="py-2 text-dark text-decoration-none" href="#"></a>
-          </nav>
-    </header>
     <header class="container site-header sticky-top py-1 border-bottom">
-      <nav class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2 text-dark d-none d-md-inline-block" href="/main_course">Головна страва</a>
-        <a class="py-2 text-dark d-none d-md-inline-block" href="/soup">Супи</a>
-        <a class="py-2 text-dark d-none d-md-inline-block" href="/baking">Випічка</a>
-        <a class="py-2 text-dark d-none d-md-inline-block" href="/desserts">Десерти</a>
-        <a class="py-2 text-dark d-none d-md-inline-block" href="/drinks">Напої</a>
-        <a class="py-2 text-dark d-none d-md-inline-block" href="/appetizer">Закуски</a>
-      </nav>
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 text-dark d-none d-md-inline-block" href="/main_course">Головна страва</a>
+            <a class="py-2 text-dark d-none d-md-inline-block" href="/soup">Супи</a>
+            <a class="py-2 text-dark d-none d-md-inline-block" href="/baking">Випічка</a>
+            <a class="py-2 text-dark d-none d-md-inline-block" href="/desserts">Десерти</a>
+            <a class="py-2 text-dark d-none d-md-inline-block" href="/drinks">Напої</a>
+            <a class="py-2 text-dark d-none d-md-inline-block" href="/appetizer">Закуски</a>
+        </nav>
     </header>
 
 
@@ -36,29 +39,29 @@
 
 
     <div class="container">
-    <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <small class="d-block mb-3 text-muted">©2022</small>
-        </div>
+        <footer class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">©2022</small>
+                </div>
 
-        <div class="col-6 col-md">
-          <h5>Social networks</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="https://web.telegram.org/">Telegram</a></li>
-            <li><a class="link-secondary" href="https://www.instagram.com/">Instagram</a></li>
-          </ul>
-        </div>
+                <div class="col-6 col-md">
+                    <h5>Social networks</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="https://web.telegram.org/">Telegram</a></li>
+                        <li><a class="link-secondary" href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
+                </div>
 
-        <div class="col-6 col-md">
-          <h5>Team</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Марія</a></li>
-            <li><a class="link-secondary" href="#">Макар</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+                <div class="col-6 col-md">
+                    <h5>Team</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Марія</a></li>
+                        <li><a class="link-secondary" href="#">Макар</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
