@@ -10,30 +10,31 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-<header class="py-3 mb-4 border-bottom">
-    <div class="container d-flex flex-wrap justify-content-center">
-        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">MaMa</span>
-        </a>
-        <form class="col-10 col-lg-auto mb-3 mb-lg-0" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-    </div>
+<header class="container sticky-top d-flex flex-column  align-items-center bg-white ">
+    <header class="container sticky-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-4">     MaMa    </span>
+          </a>
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <form class="container col-10 col-lg-auto mb-3 mb-lg-0" role="search">
+                    <input type="search" class="container form-control" placeholder="Search..." aria-label="Search">
+                </form>
+                <a class=" btn text-decoration-none" href="/sign_in">Sign in</a>
+                <a class=" btn btn-warning text-decoration-none" href="/addrecipes">Додати рецепт</a>
+          </nav>
 
-    <header class="container site-header sticky-top py-1 border-bottom">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2 text-dark d-none d-md-inline-block" href="/main_course">Головна страва</a>
-            <a class="py-2 text-dark d-none d-md-inline-block" href="/soup">Супи</a>
-            <a class="py-2 text-dark d-none d-md-inline-block" href="/baking">Випічка</a>
-            <a class="py-2 text-dark d-none d-md-inline-block" href="/desserts">Десерти</a>
-            <a class="py-2 text-dark d-none d-md-inline-block" href="/drinks">Напої</a>
-            <a class="py-2 text-dark d-none d-md-inline-block" href="/appetizer">Закуски</a>
-        </nav>
     </header>
-
+    <header class="container site-header sticky-top p-3 px-md-4 border-bottom">
+      <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 text-dark d-none d-md-inline-block" href="/main_course">Головна страва</a>
+        <a class="py-2 text-dark d-none d-md-inline-block" href="/soup">Супи</a>
+        <a class="py-2 text-dark d-none d-md-inline-block" href="/baking">Випічка</a>
+        <a class="py-2 text-dark d-none d-md-inline-block" href="/desserts">Десерти</a>
+        <a class="py-2 text-dark d-none d-md-inline-block" href="/drinks">Напої</a>
+        <a class="py-2 text-dark d-none d-md-inline-block" href="/appetizer">Закуски</a>
+      </nav>
+    </header>
+</header>
 
     {% block body %}{% endblock %}
 
